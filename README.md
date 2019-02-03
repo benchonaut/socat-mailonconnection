@@ -15,7 +15,7 @@ designed to run via supervisord(does not fork)
 
 [program:mysql-socat]
 
-command=/bin/bash /etc/custom/socat-mailonconnection/spawn_sqlsocatmailer my-old-server-that-ends-soon.com 3306
+command=/bin/bash /etc/custom/socat-mailonconnection/spawn_socatmailer my-old-server-that-ends-soon.com 3306
 
 stderr_logfile = /tmp/sqlsocat-stderr.log
 
