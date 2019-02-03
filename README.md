@@ -14,7 +14,10 @@ designed to run via supervisord(does not fork)
  example config snippet (adjust script path!):
 
 [program:mysql-socat]
+
 command=/bin/bash /etc/custom/socat-mailonconnection/spawn_sqlsocatmailer my-old-server-that-ends-soon.com 3306
+
 stderr_logfile = /tmp/sqlsocat-stderr.log
+
 stdout_logfile = /tmp/sqlsocat-stdout.log
 
